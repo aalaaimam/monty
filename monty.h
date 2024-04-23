@@ -3,13 +3,17 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+* struct stack_t - A structure representing a stack node
+*
+* @n: The integer data stored in the node
+* @prev: A pointer to the previous node in the stack
+*/
 typedef struct stack_t
 {
-int data;
-struct stack_t *next;
+int n;
+struct stack_t *prev;
 } stack_t;
-
 void open_file(char *file_name, stack_t **head);
 void free_nodes(stack_t **head);
 stack_t *create_node(int data);
