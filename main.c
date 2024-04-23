@@ -14,8 +14,8 @@ stack_t *head = NULL;
 int fd, line_number;
 char *buffer = NULL;
 size_t bufsize = 0;
-ssize_t n_read;
-instruction_t instruction;
+size_t n_read;
+struct instruction instruction;
 
 if (argc != 2)
 {
