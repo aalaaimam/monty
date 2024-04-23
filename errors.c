@@ -18,7 +18,7 @@ fprintf(stderr, "L%u: ", line_number);
 vfprintf(stderr, format, ag);
 va_end(ag);
 
-free_nodes();
+free_nodes(head);
 exit(error_code);
 }
 
@@ -37,7 +37,7 @@ fprintf(stderr, "L%u: ", line_number);
 vfprintf(stderr, format, ag);
 va_end(ag);
 
-free_nodes();
+free_nodes(head);
 exit(error_code);
 }
 
@@ -50,6 +50,6 @@ void string_err(int error_code, unsigned int line_number)
 {
 fprintf(stderr, "L%u: unknown instruction string\n", line_number);
 
-free_nodes();
+free_nodes(head);
 exit(error_code);
 }

@@ -14,7 +14,7 @@ int fd;
 fd = open(file_name, O_RDONLY);
 if (fd == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't open file %s\n", file_name);
+perror("Error: Can't open file");
 exit(EXIT_FAILURE);
 }
 return (fd);
@@ -24,7 +24,7 @@ return (fd);
 * free_nodes - Frees nodes in the stack.
 * @head: Pointer to the head of the stack.
 */
-void free_nodes(stack_t *head)
+void free_nodes(stack_t **head)
 {
 stack_t *tmp;
 
