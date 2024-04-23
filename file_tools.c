@@ -5,7 +5,8 @@ void open_file(char *file_name, stack_t **head)
 /* Implementation of open_file */
 }
 
-void free_nodes(stack_t **head) {
+void free_nodes(stac_t **head)
+{
 /* Implementation of free_nodes */
 }
 
@@ -21,6 +22,7 @@ node->next = NULL;
 return node;
 }
 
-void add_to_queue(stack_t **new_node, stack_t **head, unsigned int ln) {
+void add_to_queue(stack_t **new_node, stack_t **head, unsigned int ln)
+{
 /* Implementation of add_to_queue */
 }

@@ -4,7 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct stack_t {
+typedef struct stack_t
+{
 int data;
 struct stack_t *next;
 } stack_t;
