@@ -15,7 +15,7 @@ if (argc != 2)
 fprintf(stderr, "USAGE: monty file\n");
 exit(EXIT_FAILURE);
 }
-open_file(argv[1], &head); /* Pass head as a parameter */
-free_nodes(&head); /* Pass head as a parameter */
+open_file(argv[1]); /* Pass only the filename */
+free_nodes(); /* No need to pass anything */
 return (0);
 }
