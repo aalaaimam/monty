@@ -62,7 +62,9 @@ free(tmp);
 * @head: Pointer to the head of the stack.
 * @ln: line number of the opcode.
 */
-void add_to_queue(stack_t **new_node, stack_t **head, __attribute__((unused)) unsigned int ln)
+void add_to_queue(stack_t **new_node,
+stack_t **head,
+__attribute__((unused)) unsigned int ln)
 {
 stack_t *tmp;
 
