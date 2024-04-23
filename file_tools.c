@@ -1,3 +1,5 @@
+#include <fcntl.h>
+#include <unistd.h>
 #include "monty.h"
 
 /**
